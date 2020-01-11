@@ -15,6 +15,17 @@ for i in range(20):
 for i in range(30):
     canvas.create_line(0, BLOCK_SIZE * i, SURFACE_WIDTH, BLOCK_SIZE * i, fill='white')
 
+# test
+points = [0, 0, B, 0, B, B, 2*B, B, 2*B, 2*B, 3*B, 2*B, 0, 2*B] 
+shape = canvas.create_polygon(points, fill=SHAPES_FILL[3])
+print(shape)
+
+def draw_shape(shape):
+    global canvas
+    
+   
+    
+    return shape
 
 
 window.mainloop()
